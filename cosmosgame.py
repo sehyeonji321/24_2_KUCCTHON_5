@@ -130,7 +130,7 @@ while running:
 
     else:
         screen.fill(BLACK)
-        end_text = font.render(f"Game Over! Final Score: {score}", True, WHITE)
+        end_text = font.render(f"게임 오버! 최종 점수: {score}", True, WHITE)
         screen.blit(end_text, (WIDTH // 2 - end_text.get_width() // 2, HEIGHT // 2 - 30))
         retry_button = pygame.Rect(WIDTH // 2 - 50, HEIGHT // 2 + 50, 100, 40)
         pygame.draw.rect(screen, BLUE, retry_button)
